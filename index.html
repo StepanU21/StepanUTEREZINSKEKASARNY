@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabulka barev</title>
+    <title>Tabulka učitelů GMVV</title>
     <style>
         table {
-            width: 50%;
+            width: 80%;
             border-collapse: collapse;
             margin: 20px auto;
         }
@@ -14,50 +14,46 @@
             padding: 10px;
             text-align: center;
             border: 1px solid #000;
+            height: 80px;
         }
-        .red {
-            background-color: red;
+        .teacher-cell {
+            font-weight: bold;
+            background-color: #f0f0f0;
         }
-        .green {
-            background-color: green;
-        }
-        .blue {
-            background-color: blue;
-        }
-        .yellow {
-            background-color: yellow;
-        }
-        .purple {
-            background-color: purple;
+        /* Styling pro roztáhlý obrázek */
+        .full-width-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
-    <h2 style="text-align: center;">Barevná tabulka</h2>
+    <h2 style="text-align: center;">Pedagogové GMVV</h2>
     
     <table>
         <tr>
-            <th>Sloupec 1</th>
-            <th>Sloupec 2</th>
-            <th>Sloupec 3</th>
+            <th>Jméno učitele 1</th>
+            <th>Jméno učitele 2</th>
+            <th>Jméno učitele 3</th>
         </tr>
         <tr>
-            <td class="red">AHOJ</td>
-            <td class="green">Zelená</td>
-            <td class="blue">Modrá</td>
+            <td class="teacher-cell">Jméno učitele 1</td>
+            <td class="teacher-cell">Jméno učitele 2</td>
+            <td class="teacher-cell">Jméno učitele 3</td>
         </tr>
         <tr>
-            <td class="yellow">Žlutá</td>
-            <td class="purple">Fialová</td>
-            <td class="red">Červená</td>
+            <td class="teacher-cell">Jméno učitele 4</td>
+            <td class="teacher-cell">Jméno učitele 5</td>
+            <td class="teacher-cell">Jméno učitele 6</td>
         </tr>
-        <tr>
-            <td class="green">Zelená</td>
-            <td class="blue">Modrá</td>
-            <td class="yellow">Žlutá</td>
-        </tr>
+        <!-- Přidej další řádky s jmény učitelů dle potřeby -->
     </table>
+
+    <!-- Obrázek roztáhlý na celou šířku -->
+    <img src="https://www.gmvv.cz/media/k2/items/cache/c1034feeb8e544b33d1fc604d40ae043_S.jpg" alt="Fotka" class="full-width-image">
 
 </body>
 </html>
