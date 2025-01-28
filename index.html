@@ -21,17 +21,17 @@
         }
 
         .container {
-            display: flex;
-            justify-content: space-around;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 sloupce */
+            gap: 20px;
             padding: 20px;
-            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .column {
-            width: 30%;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 10px;
             padding: 20px;
             text-align: center;
         }
@@ -50,6 +50,13 @@
         .column p {
             font-size: 1em;
             color: #555;
+        }
+
+        /* Responsivita: při malých obrazovkách (mobil) se použije 1 sloupec */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr; /* 1 sloupec */
+            }
         }
     </style>
 </head>
@@ -79,7 +86,7 @@
 
     <div class="container">
         <div class="column">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSMIc2ZM5GkU0whYGWwm8XDL3jWw1LWKfbaw&s" alt="Hovězí guláš">
+            <img src="https://kaufland.media.schwarz/is/image/schwarz/recipe-cz-11318492_knedlik-hovezi-cibule:k-smartcrop-og-1354" alt="Hovězí guláš">
             <h2>Hovězí guláš</h2>
             <p>Hovězí guláš je tradiční české jídlo z hovězího masa, cibule, česneku a koření. Podává se s knedlíky nebo chlebem.</p>
         </div>
