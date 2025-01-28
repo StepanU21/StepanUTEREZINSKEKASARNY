@@ -3,80 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Irindi Zelk - Životopis</title>
+    <title>Tabulka s kaskádovým stylem</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
         }
 
-        header {
-            background-color: #333;
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
             color: white;
-            padding: 10px 0;
-            text-align: center;
         }
 
-        .container {
-            padding: 20px;
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
         }
 
-        h1, h2 {
-            color: #333;
-        }
-
-        .bio {
-            margin-bottom: 30px;
-        }
-
-        .bio p {
-            line-height: 1.6;
-        }
-
-        .image-container {
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-
-        .image-container img:hover {
-            transform: scale(1.1);
+        tr:hover {
+            background-color: #ddd;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Irindi Zelk - Nadějný, ale skandalní albánský fotbalista</h1>
-</header>
-
-<div class="container">
-    <div class="bio">
-        <h2>Osobní život</h2>
-        <p>Irindi Zelk se narodil 15. května 1998 v albánské Tiraně. Vyrůstal ve fotbalové rodině, jeho otec byl bývalý profesionální fotbalista, což pro něj znamenalo velký tlak na výkon už od mladého věku. Irindi byl talentovaný, rychlý a měl přirozený cit pro hru. Jeho kariéra začala v místním klubu FK Tirana, kde si ho brzy všimli skauti z velkých evropských klubů.</p>
-        
-        <h2>Kariéra</h2>
-        <p>V roce 2016 podepsal smlouvu s italským klubem SSC Neapol, kde se jeho kariéra skutečně rozjela. Zpočátku se zdálo, že Irindi je nový fotbalový zázrak, avšak jeho vzezření v médiích nebylo tak růžové. Mimo fotbalové hřiště byl známý svými skandály, divokými večírky a veřejnými hádkami s trenéry a spoluhráči.</p>
-
-        <p>V roce 2019 měl svůj největší veřejný skandál, kdy se na veřejnosti objevil ve sporné situaci s několika modelkami po noci plné alkoholu. Tento incident způsobil, že se dostal na první stránky novin, ale i přesto zůstal v očích některých fanoušků symbolem naděje a rebelského ducha fotbalu.</p>
-
-        <h2>Současnost</h2>
-        <p>V roce 2023 přestoupil do anglického klubu West Ham United, kde se i nadále vyhýbal mediálnímu stínu a dával více důraz na svůj výkon na hřišti. V současnosti je považován za jednoho z nejkontroverznějších, ale zároveň i nejtalentovanějších hráčů nové generace.</p>
-    </div>
-
-    <div class="image-container">
-        <h2>Irindi Zelk - Na hřišti a mimo něj</h2>
-        <img src="data:image/jpeg;base64,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" alt="Irindi Zelk na hřišti">
-    </div>
-</div>
+    <h2 style="text-align:center;">Tabulka s kaskádovými styly</h2>
+    
+    <table>
+        <tr>
+            <th>Jméno</th>
+            <th>Věk</th>
+            <th>Město</th>
+        </tr>
+        <tr>
+            <td>Jan Novák</td>
+            <td>30</td>
+            <td>Praha</td>
+        </tr>
+        <tr>
+            <td>Petr Svoboda</td>
+            <td>25</td>
+            <td>Brno</td>
+        </tr>
+        <tr>
+            <td>Lucie Kovářová</td>
+            <td>28</td>
+            <td>Ostrava</td>
+        </tr>
+    </table>
 
 </body>
 </html>
