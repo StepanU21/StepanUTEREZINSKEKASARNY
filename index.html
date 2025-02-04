@@ -3,106 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jídlo</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            text-align: center;
-        }
-
-        h1 {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
-            margin: 0;
-        }
-
-        .container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 sloupce */
-            gap: 20px;
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .column {
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            text-align: center;
-        }
-
-        .column img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        .column h2 {
-            font-size: 1.5em;
-            margin-top: 10px;
-        }
-
-        .column p {
-            font-size: 1em;
-            color: #555;
-        }
-
-        /* Responsivita: při malých obrazovkách (mobil) se použije 1 sloupec */
-        @media (max-width: 768px) {
-            .container {
-                grid-template-columns: 1fr; /* 1 sloupec */
-            }
-        }
-    </style>
+    <title>Fotbalový svět</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-
-    <h1>Jídlo</h1>
-
-    <div class="container">
-        <div class="column">
-            <img src="https://bestrecepty.cz/wp-content/uploads/2021/09/222244695_6241648045870234_6950792176323048699_n.jpg" alt="Svíčková">
-            <h2>Svíčková na smetaně</h2>
-            <p>Tradiční česká omáčka připravovaná z hovězího masa, kořenové zeleniny a smetany. Podává se s knedlíky.</p>
-        </div>
-
-        <div class="column">
-            <img src="https://1gr.cz/fotky/idnes/23/042/r7/JVE86e85d_30951_102177115.jpg" alt="Vepřo knedlo zelo">
-            <h2>Vepřo knedlo zelo</h2>
-            <p>Vepřo knedlo zelo je oblíbené české jídlo s vepřovým masem, kysaným zelím a houskovým knedlíkem.</p>
-        </div>
-
-        <div class="column">
-            <img src="https://static.toprecepty.cz/fotky/recepty/0054/rajska-omacka-s-karbanatkem-131818-1920-1080-nw.jpg" alt="Rajská omáčka">
-            <h2>Rajská omáčka</h2>
-            <p>Rajská omáčka je jemně sladká omáčka připravovaná z rajčat, která se často podává s masovými knedlíky nebo těstovinami.</p>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="column">
-            <img src="https://kaufland.media.schwarz/is/image/schwarz/recipe-cz-11318492_knedlik-hovezi-cibule:k-smartcrop-og-1354" alt="Hovězí guláš">
-            <h2>Hovězí guláš</h2>
-            <p>Hovězí guláš je tradiční české jídlo z hovězího masa, cibule, česneku a koření. Podává se s knedlíky nebo chlebem.</p>
-        </div>
-
-        <div class="column">
-            <img src="https://www.jimebrno.cz/upload/restaurace/pivnice_u_kohotu/jidlo/detska_jidla_kohouti_-_smazeny_syr.jpg" alt="Smažený sýr">
-            <h2>Smažený sýr</h2>
-            <p>Smažený sýr je oblíbené české jídlo, které se skládá z plátku sýra obaleného v trojobalu a usmaženého do křupava.</p>
-        </div>
-
-        <div class="column">
-            <img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/F8B62DF2-977F-4A48-A02A-2047E5913BBC/Derivates/E2D76298-E122-49F7-9E01-79A1E2585F0E.jpg" alt="Houskové knedlíky">
-            <h2>Houskové knedlíky</h2>
-            <p>Houskové knedlíky jsou přílohou k mnoha českým pokrmům. Jsou připraveny z kynutého těsta s kousky housky.</p>
-        </div>
-    </div>
-
+    <header>
+        <h1>Fotbalový svět</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="historie.html">Historie</a></li>
+                <li><a href="tymy.html">Týmy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Vítejte ve světě fotbalu</h2>
+        <p>Fotbal je nejpopulárnější sport na světě s miliony fanoušků.</p>
+        <img src="fotbal.jpg" alt="Fotbalový míč na hřišti">
+    </main>
+    <footer>
+        <p>Pouze pro studijní účely</p>
+    </footer>
 </body>
 </html>
